@@ -1,16 +1,12 @@
 # Self-learning
 ## Nodejs
-### :open_file_folder: subject-nodejs
+### :open_file_folder: subject-nodejs/0x00
 
 #### Resources
-* [Node.js](https://nodejs.org/en/)
-
-#### Training
-* :open_file_folder: 0x00 Foundations
 
 ## Learning Objectives
 ### General
-Node.js
+#### Terms and concepts
 
 ## Software engineer
 [Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com/)
