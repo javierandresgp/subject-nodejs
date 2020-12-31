@@ -10,6 +10,7 @@
 * [MIME types](http://sites.utoronto.ca/webdocs/HTMLdocs/Book/Book-3ed/appb/mimetype.html)
 * [Node.js Documentation](https://nodejs.org/api/)
 * [npm Documentation](https://docs.npmjs.com/)
+* [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
 
 ## Learning Objectives
 ### General
