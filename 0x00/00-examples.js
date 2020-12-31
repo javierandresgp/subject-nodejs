@@ -1,4 +1,7 @@
 "use strict";
+
+const { EventEmitter } = require("events");
+
 //console.log("Hello, World!");
 
 /**
@@ -53,7 +56,7 @@ for (let i = 0; i < buf.length; i++) {
 console.info(buf.toString("ascii"));
 */
 
-/* Stream */
+/* Stream with File System*/
 /*
 const fs = require("fs"),
   readStream = fs.createReadStream("assets/names.txt"),
@@ -68,3 +71,13 @@ readStream.on("end", function () {
 */
 
 /* Events */
+const eventEmitter = require("events").EventEmitter,
+  pub = new EventEmitter();
+pub.on("myevent", function (message) {
+  console.info(message);
+});
+pub.once("myevent", function (message) {
+  console.info("Is issued the first time " + message);
+});
+pub.emit("myevent", "I'm an event broadcaster.");
+pub.emit("myevent", "Again.");
