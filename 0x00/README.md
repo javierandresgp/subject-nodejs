@@ -4,11 +4,19 @@
 
 #### Resources
 * [Callback Hell](http://callbackhell.com/)
+* [AJAX](https://uniwebsidad.com/libros/ajax/capitulo-7)
+* [HTTP status code](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP)
+* [MIME extensions](https://es.wikipedia.org/wiki/Multipurpose_Internet_Mail_Extensions)
+* [MIME types](http://sites.utoronto.ca/webdocs/HTMLdocs/Book/Book-3ed/appb/mimetype.html)
+* [Node.js Documentation](https://nodejs.org/api/)
+* [npm Documentation](https://docs.npmjs.com/)
 
 ## Learning Objectives
 ### General
 #### Terms and concepts
 * Node.js
+  * Fork
+    - io.js
   * Programming environment
     - Based on JS language
     - Based on V8 engine
@@ -27,11 +35,35 @@
 * Single thread
   - Based on callbacks
   - Event loop
-
 * Frameworks
   - Express
-* Fork
-  - io.js
+* Download
+  - Install LTS (Long Term Support)
+* Good practices
+  * Order
+    - Libraries, Modules
+    - Constants
+    - Objects, Variables
+    - Functions
+    - Events
+    - Executions
+    - Mode strict
+  * Prefer
+    - lowerCamelCase
+    - Single quotes
+* Core
+  - Stability level
+  * Some modules of the core
+    - Globals
+    - Process
+    - HTTP
+    - Buffer
+    - Stream
+    - File System
+    - Events
+    - Util
+    - Timers
+    - Modules (require/export)
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
