@@ -64,7 +64,20 @@
     - Events
     - Util
     - Timers
+    - Path
+    - URL
+    - Query String
     - Modules (require/export)
+* Inheritance
+* Classes
+  - class
+  - constructor
+  - extends
+  - static
+  - getter
+  - setter
+  - private field
+  - public field
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
