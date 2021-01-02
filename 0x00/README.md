@@ -67,6 +67,10 @@
     - Path
     - URL
     - Query String
+    - Sniffer
+    * Forms
+      - GET
+      - POST
     - Modules (require/export)
 * Inheritance
 * Classes
