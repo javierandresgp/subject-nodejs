@@ -53,7 +53,7 @@ for (let i = 0; i < buf.length; i++) {
 console.info(buf.toString("ascii"));
 */
 
-/* Stream with File System*/
+/* Stream, File System*/
 /*
 const fs = require("fs"),
   readStream = fs.createReadStream("assets/names.txt"),
@@ -82,30 +82,35 @@ pub.emit("myevent", "I'm an event broadcaster.");
 pub.emit("myevent", "Again.");
 */
 
-/* PATH */
+/* HTTP, PATH, URL, Query String */
 /*
 const http = require("http").createServer(webServer),
   path = require("path"),
+  url = require("url"),
   urls = [
     {
+      id: 1,
       route: "",
       output: "<h2>Home ...</h2>",
     },
     {
+      id: 2,
       route: "about",
       output: "<h2>About ...</h2>",
     },
     {
+      id: 3,
       route: "contact",
       output: "<h2>Contact ...</h2>",
     },
   ];
 function webServer(req, res) {
   const message = "<h1>Hello, World!</h1>",
-    pathURL = path.basename(req.url);
-  console.log(pathURL);
+    pathURL = path.basename(req.url),
+    id = url.parse(req.url, true).query.id;
+  console.info(`ID: ${id}, Path: ${pathURL}`);
   urls.forEach(function (el) {
-    if (el.route === pathURL) {
+    if (el.route === pathURL || el.id == id) {
       res.writeHead(200, { "Content-Type": "text/html" });
       res.end(message + el.output);
     }
@@ -118,3 +123,18 @@ function webServer(req, res) {
 http.listen(3000);
 console.info("Server running at http://localhost:3000");
 */
+
+/* HTTP, CLIENT */
+const http = require("http"),
+  options = {
+    host: "javierandresgp.com",
+  };
+http
+  .get(options, function (res) {
+    console.log(`Host: ${options.host}, Status code: ${res.statusCode}`);
+  })
+  .on("error", function (err) {
+    console.log(
+      `Host: ${options.host}, Error code: ${err.code}, Error message: ${err.message}`
+    );
+  });
