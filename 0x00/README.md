@@ -67,7 +67,6 @@
     - Path
     - URL
     - Query String
-    - Path
     - Modules (require/export)
 * Inheritance
 * Classes
