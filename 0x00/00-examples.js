@@ -1,7 +1,4 @@
 "use strict";
-
-const { EventEmitter } = require("events");
-
 //console.log("Hello, World!");
 
 /**
@@ -43,7 +40,7 @@ const server = http.createServer((req, res) => {
   res.end("Hello World");
 });
 server.listen(port, hostname, () =>
-  console.info(`Server running at http://$hostname}:${port}/`)
+  console.info(`Server running at http://${hostname}:${port}/`)
 );
 */
 
@@ -71,6 +68,8 @@ readStream.on("end", function () {
 */
 
 /* Events */
+/*
+const { EventEmitter } = require("events");
 const eventEmitter = require("events").EventEmitter,
   pub = new EventEmitter();
 pub.on("myevent", function (message) {
@@ -81,3 +80,41 @@ pub.once("myevent", function (message) {
 });
 pub.emit("myevent", "I'm an event broadcaster.");
 pub.emit("myevent", "Again.");
+*/
+
+/* PATH */
+/*
+const http = require("http").createServer(webServer),
+  path = require("path"),
+  urls = [
+    {
+      route: "",
+      output: "<h2>Home ...</h2>",
+    },
+    {
+      route: "about",
+      output: "<h2>About ...</h2>",
+    },
+    {
+      route: "contact",
+      output: "<h2>Contact ...</h2>",
+    },
+  ];
+function webServer(req, res) {
+  const message = "<h1>Hello, World!</h1>",
+    pathURL = path.basename(req.url);
+  console.log(pathURL);
+  urls.forEach(function (el) {
+    if (el.route === pathURL) {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.end(message + el.output);
+    }
+  });
+  if (!res.finished) {
+    res.writeHead(404, { "Content-Type": "text/html" });
+    res.end("<h1>Error 404: Page not found.</h1>");
+  }
+}
+http.listen(3000);
+console.info("Server running at http://localhost:3000");
+*/
