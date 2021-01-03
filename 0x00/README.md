@@ -71,6 +71,7 @@
     * Forms
       - GET
       - POST
+    - Debugger
     - Modules (require/export)
 * Inheritance
 * Classes
@@ -90,7 +91,12 @@
     - Global: ```npm install <package_name> -g```
     - Project dependency: ```npm install <package_name> --save```
     - Development dependency: ```npm install <package_name> --save-dev```
-
+  * Some packages
+    - node-inspector
+    - supervisor
+    - nodemon
+    - forever
+    - pm2
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
