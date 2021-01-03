@@ -125,6 +125,7 @@ console.info("Server running at http://localhost:3000");
 */
 
 /* HTTP, CLIENT */
+/*
 const http = require("http"),
   options = {
     host: "javierandresgp.com",
@@ -138,3 +139,35 @@ http
       `Host: ${options.host}, Error code: ${err.code}, Error message: ${err.message}`
     );
   });
+*/
+
+/* FORM */
+const http = require("http").createServer(webServer),
+  form = require("fs").readFileSync("assets/form.html"),
+  querystring = require("querystring"),
+  util = require("util");
+let dataString = "";
+function webServer(req, res) {
+  if (req.method === "GET") {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end(form);
+  }
+  if (req.method === "POST") {
+    req.on("data", function (data) {
+      dataString += data;
+    });
+    req.on("end", function () {
+      const dataObject = querystring.parse(dataString),
+        dataJSON = util.inspect(dataObject),
+        templateString = `
+Data as String: ${dataString}
+Data as Object: ${dataObject}
+Data as JSON: ${dataJSON}
+      `;
+      res.end(templateString);
+      console.log(templateString);
+    });
+  }
+}
+http.listen(3000);
+console.info("Server running at http://localhost:3000");
