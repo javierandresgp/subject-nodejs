@@ -82,6 +82,15 @@
   - setter
   - private field
   - public field
+* NPM (JS Package Manager)
+  * Types packages
+    - Globals
+  * Installing packages
+    - Unique: ```npm install <package_name>``` (not recommended)
+    - Global: ```npm install <package_name> -g```
+    - Project dependency: ```npm install <package_name> --save```
+    - Development dependency: ```npm install <package_name> --save-dev```
+
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
