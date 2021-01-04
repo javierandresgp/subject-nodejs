@@ -13,6 +13,7 @@
 * [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
 * [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)
 * [Semantic Versioning](https://semver.org/)
+* [Express](https://expressjs.com/)
 
 ## Learning Objectives
 ### General
@@ -129,8 +130,32 @@
   - reject
   - then
   - catch
-* Frameworks
+* Some Nodejs frameworks
   - Express
+  - Sails
+  - Hapi
+  - Locomotive
+  - Koa
+  - Kraken
+  - Express.IO
+  - SocketStream
+  - Geddy
+  - Total
+  - Partial
+  - Flatiron
+* Middlewares
+* Express
+  * Web application framework
+    - Routes
+    - Parameters
+    - Forms
+    - Upload files
+    - Cookies
+    - Sessions
+    - Templates
+  * Templates Engines
+  * Ghost
+
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
