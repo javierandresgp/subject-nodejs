@@ -18,15 +18,15 @@
 * Node.js
   * Fork
     - io.js
-  * Programming environment
+  * JavaScript runtime environment
     - Based on JS language
-    - Based on V8 engine
+    - Built on Google's V8 engine for Backend
+    - Interpeter
     - Based around events
     - Multiplatform
     - Asynchronous
     - I/O model
     - Asynchronous non blocking model
-  - Back-End
 * Asynchronous non blocking model
   - Synchronous, parallelism, simultaneous
   - Asynchronous, concurrence, alternate
