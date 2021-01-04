@@ -104,7 +104,8 @@
     - Project dependency: ```npm install <package_name> --save``` (package.json)
     - Development dependency: ```npm install <package_name> --save-dev``` (package.json)
   * package.json
-    - ```npm init```
+    - ```npm init``` (for a new project)
+    - ```npm install``` (for an existing project)
   * Some packages
     - node-inspector
     - supervisor
