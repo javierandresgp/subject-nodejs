@@ -29,17 +29,15 @@
     - Asynchronous
     - I/O model
     - Asynchronous non blocking model
-* Asynchronous non blocking model
-  - Synchronous, parallelism, simultaneous
-  - Asynchronous, concurrence, alternate
-  - Blocking
-  - Non-blocking
-  - Reactor design pattern
-* Single thread
-  - Based on callbacks
-  - Event loop
-* Frameworks
-  - Express
+  * Asynchronous non blocking model
+    - Synchronous, parallelism, simultaneous
+    - Asynchronous, concurrence, alternate
+    - Blocking
+    - Non-blocking
+    - Reactor design pattern
+  * Single thread
+    - Based on callbacks
+    - Event loop
 * Download
   - Install LTS (Long Term Support)
 * Good practices
@@ -63,16 +61,6 @@
     - stdout
     - exit
 * Modules (export/require)
-* Inheritance
-* Classes
-  - class
-  - constructor
-  - extends
-  - static
-  - getter
-  - setter
-  - private field
-  - public field
 * Core
   - Stability level
   * Some modules of the core
@@ -106,7 +94,7 @@
   * package.json
     - ```npm init``` (for a new project)
     - ```npm install``` (for an existing project)
-  * Some packages
+  * Some packages project dependency
     - node-inspector
     - supervisor
     - nodemon
@@ -114,7 +102,35 @@
     - pm2
     - formidable
     - fs-extra
-
+    - q
+  * Some packages development dependency
+    - grunt
+    - gulp
+    - webpack
+    -bower
+    - stylus
+    - less
+    - browserify
+    - jshint
+    - babel
+* Inheritance
+* Classes
+  - class
+  - constructor
+  - extends
+  - static
+  - getter
+  - setter
+  - private field
+  - public field
+* Callbacks
+* Promises
+  - resolve
+  - reject
+  - then
+  - catch
+* Frameworks
+  - Express
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
