@@ -11,6 +11,8 @@
 * [Node.js Documentation](https://nodejs.org/api/)
 * [npm Documentation](https://docs.npmjs.com/)
 * [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+* [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)
+* [Semantic Versioning](https://semver.org/)
 
 ## Learning Objectives
 ### General
@@ -99,14 +101,19 @@
   * Installing packages
     - Unique: ```npm install <package_name>``` (not recommended)
     - Global: ```npm install <package_name> -g```
-    - Project dependency: ```npm install <package_name> --save```
-    - Development dependency: ```npm install <package_name> --save-dev```
+    - Project dependency: ```npm install <package_name> --save``` (package.json)
+    - Development dependency: ```npm install <package_name> --save-dev``` (package.json)
+  * package.json
+    - ```npm init```
   * Some packages
     - node-inspector
     - supervisor
     - nodemon
     - forever
     - pm2
+    - formidable
+    - fs-extra
+
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
