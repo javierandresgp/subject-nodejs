@@ -52,6 +52,25 @@
   * Prefer
     - lowerCamelCase
     - Single quotes
+* Some Built-in
+  - ```__dirname```
+  - ```__filename```
+  * ```process```
+    - argv
+    - stdin
+    - stdout
+    - exit
+* Modules (export/require)
+* Inheritance
+* Classes
+  - class
+  - constructor
+  - extends
+  - static
+  - getter
+  - setter
+  - private field
+  - public field
 * Core
   - Stability level
   * Some modules of the core
@@ -72,17 +91,8 @@
       - GET
       - POST
     - Debugger
-    - Modules (require/export)
-* Inheritance
-* Classes
-  - class
-  - constructor
-  - extends
-  - static
-  - getter
-  - setter
-  - private field
-  - public field
+    - v8
+    - readLine
 * NPM (JS Package Manager)
   * Types packages
     - Globals
