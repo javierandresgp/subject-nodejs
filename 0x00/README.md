@@ -143,11 +143,13 @@
   - Total
   - Partial
   - Flatiron
-* Middlewares
-  - Are functions that have access to the request object (req), the response object (res).
-* Some middlewares
- - cookie-session
 * Express
+  * Core
+    - Express
+    - Application
+    - Request
+    - Response
+    - Router
   * Web application framework
     - Routes
     - Parameters
@@ -156,8 +158,26 @@
     - Cookies
     - Sessions
     - Templates
-  * Templates Engines
-  * Ghost
+* Middlewares
+  - Are functions that have access to the request object (req), the response object (res).
+  * Scope
+    - Global
+    - Local
+  * Type
+    - Filters
+    - Provider
+* Some middlewares
+  * Built-in
+    - static
+  * External
+    - favicon
+    - logger
+    - cookie-parser
+    - cookie-session
+    - body-parser
+* Express generator
+* Templates Engines
+* Ghost
 
 
 * Full Stack JavaScript Developer
