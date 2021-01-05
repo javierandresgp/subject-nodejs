@@ -69,8 +69,8 @@
     - Process
     - HTTP
     - Buffer
-    - Stream
     - File System
+    - Stream
     - Events
     - Util
     - Timers
