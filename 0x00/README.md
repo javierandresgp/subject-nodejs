@@ -144,6 +144,9 @@
   - Partial
   - Flatiron
 * Middlewares
+  - Are functions that have access to the request object (req), the response object (res).
+* Some middlewares
+ - cookie-session
 * Express
   * Web application framework
     - Routes
