@@ -14,6 +14,7 @@
 * [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)
 * [Semantic Versioning](https://semver.org/)
 * [Express](https://expressjs.com/)
+* [Jade Language](https://jade-lang.com/)
 
 ## Learning Objectives
 ### General
@@ -176,7 +177,16 @@
     - cookie-session
     - body-parser
 * Express generator
+* Manual generator
 * Templates Engines
+  - Jade
+  - Ejs
+  - Handlebars
+  - Pug
+  - Hogan
+  - Mustache
+  - Dust
+  - Nunjucks
 * Ghost
 
 
