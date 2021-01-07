@@ -199,7 +199,9 @@
     - MySQL
   * NoSQL (Not only SQL)
     - Mongo
-  - API REST MySQL
+  * API REST MySQL
+    - mysql
+    - express-myconnection
   - API REST MongoDB
 
 
