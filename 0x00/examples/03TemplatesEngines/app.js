@@ -3,6 +3,7 @@
 const express = require("express"),
   //path = require("path"),
   favicon = require("serve-favicon"),
+  morgan = require("morgan"),
   jade = require("jade"),
   routes = require("./routes/index"),
   faviconUrl = `${__dirname}/public/img/favicon.ico`,
@@ -17,6 +18,7 @@ app
   .set("port", port)
   // Execute middlewares
   .use(favicon(faviconUrl))
+  .use(morgan("dev"))
   .use(publicDir)
   // Execute the router middleware
   .use("/", routes);
