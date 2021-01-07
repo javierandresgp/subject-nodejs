@@ -15,6 +15,9 @@
 * [Semantic Versioning](https://semver.org/)
 * [Express](https://expressjs.com/)
 * [Jade Language](https://jade-lang.com/)
+* [Ghost](https://ghost.org/)
+* [MongoDB](https://www.mongodb.com/)
+* [MySQL](https://www.mysql.com/)
 
 ## Learning Objectives
 ### General
@@ -188,6 +191,16 @@
   - Dust
   - Nunjucks
 * Ghost
+  - Platform for creating a new media platform
+* Data Persistence
+  - CRUD (Create, Read, Update, Delete)
+  - REST (Representational State Transfer)
+  * SQL (Structured Query Language)
+    - MySQL
+  * NoSQL (Not only SQL)
+    - Mongo
+  - API REST MySQL
+  - API REST MongoDB
 
 
 * Full Stack JavaScript Developer
