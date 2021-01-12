@@ -1,16 +1,7 @@
 "use stric";
-const express = require("express"),
+const movies = require("../models/movies"),
+  express = require("express"),
   router = express.Router();
-function jade(req, res, next) {
-  const locals = {
-    author: "Javier Andrés GP",
-    title: "Jade",
-    link: "https://jade-lang.com",
-    description:
-      "Jade is an templating engine, primarily used for server-side templating in NodeJS.",
-  };
-  res.render("index", locals);
-}
 function error404(req, res, next) {
   const error = new Error(),
     locals = {
@@ -22,9 +13,21 @@ function error404(req, res, next) {
   res.render("error", locals);
   next();
 }
-router.get("/", (req, res) => {
-  res.end("<h1>Hello, World!; from first App in Express</h1>");
+router.use(movies);
+router.get("/", (req, res, next) => {
+  req.getConnection((err, movies) => {
+    movies.query("SELECT * FROM movie", (err, rows) => {
+      const locals = {
+        title: "Movie lists",
+        data: rows,
+      };
+      res.render("index", locals);
+    });
+  });
+  //next();
 });
-router.get("/jade", jade);
+router.get("/add", (req, res, next) => {
+  res.render("add-movie", { title: "Add movie" });
+});
 router.use(error404);
 module.exports = router;

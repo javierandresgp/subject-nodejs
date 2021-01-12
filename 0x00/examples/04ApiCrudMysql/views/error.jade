@@ -1,11 +1,10 @@
-doctype html
-html(lang="es")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width,initial-scale=1")
-    meta(name="description", content="#{description}")
-    link(rel="stylesheet", href="./css/style.css")
-    title #{title}
-h1 #{title}
-h2 #{description}
-pre #{error.stack}
+extends layout
+block content
+  article.container
+    div.item.center
+      h1=title
+      h2=description
+      h3
+        a(href="/") Back
+      pre.error.left
+        code #{error.stack}
