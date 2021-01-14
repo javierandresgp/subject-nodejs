@@ -202,11 +202,11 @@
   * API REST MySQL
     - mysql
     - express-myconnection
+    - express-method-override
   - API REST MongoDB
-
 
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
 
 ## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com/)
+[Javier Andrés GP](https://www.javierandresgp.com/)
