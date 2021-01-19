@@ -204,7 +204,14 @@
     - express-myconnection
     - express-method-override
   - API REST MongoDB
+* MongoDB
+  - Based on JS
+  - BSON format (Binary Script Object Notation)
+  * Documental (records)
+    - Collections (tables)
+    - 16Mb limit
 
+* Isoformicas app
 * Full Stack JavaScript Developer
   - MERN (MongoDB, Express, React, Node)
 
