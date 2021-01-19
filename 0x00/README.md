@@ -210,6 +210,14 @@
   * Documental (records)
     - Collections (tables)
     - 16Mb limit
+  * Some commands
+    - mongod
+    - mongo
+    - show dbs
+    - use <name db>
+    - show collections
+  * ODM
+    - Mongoose
 
 * Isoformicas app
 * Full Stack JavaScript Developer
