@@ -43,6 +43,9 @@ exports.uUser = async (req, res, next) => {
     const user = await User.findOneAndUpdate({ _id: req.params.id }, req.body, {
       new: true,
     });
+    if (!user) {
+      res.status(404).json({ message: "User doesn't exist" });
+    }
     res.json(user);
     console.log({ message: "User updated successfully" });
   } catch (error) {
